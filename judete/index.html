@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<!-- Primary Meta Tags -->
+    <meta name="title" content="BAC Plus — Top județe">
+    <meta name="description" content="Descoperă statistici privind rezultatele la BAC la nivel județean.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Bac Plus" />
+    <meta property="og:title" content="BAC Plus — Top județe" />
+    <meta property="og:url" content="https://bacplus.ro/judete" />
+    <meta property="og:description" content="Descoperă statistici privind rezultatele la BAC la nivel de județean." />
+    <meta property="og:image" content="https://bacplus.ro/assets/img/sm-image.jpg" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://bacplus.ro/judete">
+    <meta property="twitter:title" content="BAC Plus — Top județe">
+    <meta property="twitter:description" content="Descoperă statistici privind rezultatele la BAC la nivel de județean.">
+    <meta property="twitter:image" content="https://bacplus.ro/assets/img/sm-image.jpg">
+
+	<title>BAC Plus — Top județe</title>
+	<link rel="icon" href="../assets/img/logo.svg">
+
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<!-- Data Tables -->
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css">
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Miselaniuos functions -->
+    <script src="../assets/js/misc.js"></script>
+    
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-light static-top shadow" style="background-color:#EEE;">
+		<div class="container">
+			<a class="navbar-brand" href="../">
+				<img class="mt-0" src="../assets/img/logo-text.svg" alt="Logo" style="width:80px;">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="../licee">Licee</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="../judete">Județe
+							<span class="sr-only">(current)</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../national">Național</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../download">Download</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../contact">Contact</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../blog">Blog</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Page Content -->
+	<div class="container">
+		<h1 class="mt-5">Clasamentul județelor la examenul de bacalaureat</h1>
+		<hr>
+		<script>
+			//document.write('<div class="alert alert-success"><strong>Ești clasa a 8-a?</strong> Te invităm să afli despre <a href="https://learningo.ro">noul nostru proiect</a>.</div>');
+		if (Date.now(0) < new Date(2022, 6, 7))
+			document.write('<div class="alert alert-success"><strong>Actualizare!</strong> Au fost audăugate rezultatele după contestații.</div>');
+		</script>
+		<p>Județele pot fi ordonate crescător sau descrescător după rezultatele dintr-un anumit an la o anumită disciplină sau în general, în funcție de unul dintre următoarele criterii:</p>
+		<ul>
+			<li><b>MEDIE.</b> Media notelor tuturor elevilor din liceul respectiv. Elevii neprezentați sau eliminați din examen nu sunt luați în considerare.</li>
+			<li><b>PROCENT DE REUȘITĂ.</b> Procentul elevilor care au depășit nota minimă necesară, adică 5 per disciplină, respectiv 6 în total. Acest procent este raportat la numărul total de candidați înscriși, inclusiv cei absenți și cei eliminați din examen.</li>
+			<li><b>NUMĂRUL DE CANDIDAȚI.</b> Numărul candidaților care au susținut proba la materia respectivă, sau numărul total de candindați.</li>
+			<li><b>PREFERINȚĂ MATERIE.</b> Procentul candidaților care au susținut proba respectivă din numărul total de candidați. În mod evident, acest procent va fi mereu 100% pentru <i>GENERAL</i> și <i>LIMBA ROMÂNĂ</i>.</li>
+		</ul>
+		<p>Apăsați pe capetele de tabel pentru a ordona județele descrescător. Apăsați încă o dată pentru a le ordona crescător.</p>
+		<p>Apăsați pe orice județ pentru a vedea informații detaliate despre acesta.</p>
+		<div class="form-row mt-5">
+			<div class="form-group col-md-8">
+				<label for="inputDisciplina">Disciplina</label>
+				<select id="inputDisciplina" class="form-control">
+					<option selected>GENERAL</option>
+					<option>ANATOMIE ȘI FIZIOLOGIE UMANĂ, GENETICĂ ȘI ECOLOGIE UMANĂ</option>
+					<option>BIOLOGIE VEGETALĂ ȘI ANIMALĂ</option>
+					<option>CHIMIE ANORGANICĂ TEH NIVEL I/II</option>
+					<option>CHIMIE ANORGANICĂ TEO NIVEL I/II</option>
+					<option>CHIMIE ORGANICĂ TEH NIVEL I/II</option>
+					<option>CHIMIE ORGANICĂ TEO NIVEL I/II</option>
+					<option>ECONOMIE</option>
+					<option>FILOSOFIE</option>
+					<option>FIZICĂ TEH</option>
+					<option>FIZICĂ TEO</option>
+					<option>GEOGRAFIE</option>
+					<option>INFORMATICĂ MI C/C++</option>
+					<option>INFORMATICĂ MI PASCAL</option>
+					<option>INFORMATICĂ SN C/C++</option>
+					<option>INFORMATICĂ SN PASCAL</option>
+					<option>ISTORIE</option>
+					<option>LIMBA CROATĂ</option>
+					<option>LIMBA GERMANĂ</option>
+					<option>LIMBA ITALIANĂ</option>
+					<option>LIMBA MAGHIARĂ (REAL)</option>
+					<option>LIMBA MAGHIARĂ (UMAN)</option>
+					<option>LIMBA ROMÂNĂ</option>
+					<option>LIMBA SÂRBĂ</option>
+					<option>LIMBA SLOVACĂ</option>
+					<option>LIMBA TURCĂ</option>
+					<option>LIMBA UCRAINEANĂ</option>
+					<option>LOGICĂ, ARGUMENTARE ȘI COMUNICARE</option>
+					<option>MATEMATICĂ MATE/INFO</option>
+					<option>MATEMATICĂ PED</option>
+					<option>MATEMATICĂ ST/NAT</option>
+					<option>MATEMATICĂ TEHN</option>
+					<option>PSIHOLOGIE</option>
+					<option>SOCIOLOGIE</option>
+				</select>
+			</div>
+			<div class="form-group col-md-4">
+				<label for="inputAn">Anul</label>
+				<select id="inputAn" class="form-control">
+                    <script>document.write(yformat("", "<option>__an__</option>", ""))</script>
+				</select>
+			</div>
+		</div>
+		<hr>
+		<table id="table" class="display" style="width:100%">
+			<thead>
+				<tr>
+					<th></th>
+					<th>Județ</th>
+					<th>Medie</th>
+					<th>Procent de reușită</th>
+					<th>Număr de candidați</th>
+					<th>Preferință materie</th>
+				</tr>
+			</thead>
+		</table>
+	</div>
+
+	<div class="mt-auto">
+		<div class="text-center p-3 mt-5" style="background-color: rgba(220, 220, 220)">
+			© <script>document.write(new Date().getFullYear())</script> Copyright:
+			<a class="text-dark" href="https://bacplus.ro/">BacPlus.ro</a>
+		</div>
+	</div>
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- Bootstrap core JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+	<!-- Data Tables -->
+	<script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+
+	<!-- DT Plugins -->
+	<script src="https://cdn.datatables.net/plug-ins/1.10.22/filtering/type-based/accent-neutralise.js"></script>
+	<script src="../assets/js/percentageBars.js"></script>
+
+	<script>
+		function loadTable(url, cb) {
+			$.get(url, function(data) {
+				data = data.split('\n');
+				for (var i = 0; i < data.length; i++) {
+					data[i] = [""].concat(data[i].split('\t'));
+				}
+				cb(data);
+			});
+		}
+
+		var table = undefined;
+
+		function updateTable() {
+			let materie = $("#inputDisciplina").val().toUpperCase().replace(/ /g, "_").replace("/", "-").normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+			let prefMaterie = (["GENERAL", "LIMBA_ROMANA"].indexOf(materie) == -1);
+			loadTable("../assets/data/" + $("#inputAn").val() + "/top_judete/" + materie + ".txt", function(data) {
+				if (table != undefined)
+					table.destroy();
+
+				table = $('#table').DataTable( {
+					"lengthMenu": [[14, 21, 42], [14, 21, "Toate"]],
+					"columnDefs": [ {
+						"searchable": false,
+						"orderable": false,
+						"targets": 0
+					}, {
+						"orderable": false,
+						"targets": 1,
+                        render: function( data, type, row ){ return '<a href="../info-judete?name=' + data.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/ /g, "_").replace("/", "-") + '">' + data + '</a>' }
+					}, {
+						"className": "dt-center",
+						"targets": "_all"
+					}, {
+						targets: 2,
+						render: $.fn.dataTable.render.number(" ", ",", 2)
+			 		}, {
+						targets: 3,
+						render: $.fn.dataTable.render.percentBar( 'round',null,null,'scale',null, 1, 'solid' )
+			 		}, {
+						targets: 4,
+						render: $.fn.dataTable.render.number(" ", ",", 0)
+			 		}, {
+						targets: 5,
+						render: $.fn.dataTable.render.percentBar( 'round','#FFF', '#269ABC', '#31B0D5', '#286090', 1, 'solid' ),
+						visible: prefMaterie
+			 		}],
+					"data": data,
+					"order": [[ 2, 'desc' ]],
+					"language": {
+						"decimal": ",",
+						"thousands": ".",
+						"url": "../assets/lang/Romanian.json",
+					},
+					"aoColumns": [
+						null,
+						null,
+						{ "orderSequence": [ "desc", "asc" ] },
+						{ "orderSequence": [ "desc", "asc" ] },
+						{ "orderSequence": [ "desc", "asc" ] },
+						{ "orderSequence": [ "desc", "asc" ] },
+					],
+					"scrollX": true
+				} );
+			 
+				table.on( 'order.dt search.dt', function () {
+					table.column(0, {search:'none', order:'applied'}).nodes().each( function (cell, i) {
+						cell.innerHTML = i+1;
+					} );
+				} ).draw();
+
+				table.on('page.dt', function() {
+					if ($(window).scrollTop() > $(".dataTables_scrollHead").offset().top)
+						$('html, body').animate({
+							scrollTop: $(".dataTables_scrollHead").offset().top
+						}, 'slow');
+				});
+			});
+		}
+
+		$(document).ready(function() {
+			updateTable();
+			$("#inputDisciplina").change(updateTable);
+			$("#inputAn").change(updateTable);
+		} );
+	</script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-HVWNGQ3WKV"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-HVWNGQ3WKV');
+	</script>
+
+</body>
+
+</html>

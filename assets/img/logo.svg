@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   id="svg2"
+   viewBox="0 0 750.00002 750.00001"
+   height="211.66667mm"
+   width="211.66667mm">
+  <defs
+     id="defs4" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(947.14258,-125.21875)"
+     id="layer1">
+    <path
+       id="path4136"
+       d="m -747.14258,125.21875 a 200,200 0 0 0 -200,200 200,200 0 0 0 103.44531,174.89453 200,200 0 0 0 -103.44531,175.10547 200,200 0 0 0 200,200 200,200 0 0 0 200,-200 l 0,-150 150,0 a 200,200 0 0 0 200,-200 200,200 0 0 0 -200,-200 200,200 0 0 0 -174.89453,103.44531 200,200 0 0 0 -175.10547,-103.44531 z m 0,50 a 150,150 0 0 1 150,150 l 0,150 -150,0 a 150,150 0 0 1 -150,-150 150,150 0 0 1 150,-150 z m 350,0 a 150,150 0 0 1 150,150 150,150 0 0 1 -150,150 l -150,0 0,-150 a 150,150 0 0 1 150,-150 z m -350,350 150,0 0,150 a 150,150 0 0 1 -150,150 150,150 0 0 1 -150,-150 150,150 0 0 1 150,-150 z"
+       style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero" />
+  </g>
+</svg>
