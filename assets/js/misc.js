@@ -39,3 +39,7 @@ function yformat(start, format, end){
   
   return retval + end;
 }
+
+let params = new URLSearchParams(window.location.href);
+if (params.get('name'))
+	document.title = "BAC Plus — " + params.get('name');
