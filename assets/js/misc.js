@@ -1,7 +1,3 @@
-if (location.protocol !== 'https:') {
-    location.replace(`https:${location.href.substring(location.protocol.length)}`);
-}
-
 function sort_object(obj) {
 	items = Object.keys(obj).map(function(key) {
 		return [key, obj[key]];
@@ -27,7 +23,7 @@ function getParam( param ){
 	return url.searchParams.get(param);
 }
 
-var years = [2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014];
+var years = [2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014];
 
 // exemplu: yformat("anii:", " {an}", "!") ---> "anii: 2019, 2020!"
 function yformat(start, format, end){
